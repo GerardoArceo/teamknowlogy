@@ -70,7 +70,8 @@ Se pueden consultar las estadísticas mediante el servicio levantado en la ruta 
 {“count_mutations”:40, “count_no_mutation”:100: “ratio”:0.4}
 ```
 
-<a href="https://gerardoarceo.com/teamknowlogy/stats">Consulta estadísticas en servidor remoto</a>
+#### Ejemplo de petición GET a la consulta de estadisticas en el servidor remoto
+<a href="https://gerardoarceo.com/teamknowlogy/stats"></a>
 
 
 ## Algoritmo
