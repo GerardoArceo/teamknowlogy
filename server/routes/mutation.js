@@ -134,6 +134,7 @@ function updateData(dna, mutation) {
     fs.writeFileSync('server/docs/dna.json', JSON.stringify(json), (err) => {
         if (err) throw err;
     });
+    console.log(json);
     return json;
 }
 

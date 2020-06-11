@@ -1,4 +1,4 @@
-const { validDna, stringMutations, diagonalStringMutations, hasMutation } = require('../routes/mutation');
+const { validDna, stringMutations, diagonalStringMutations, hasMutation, updateData } = require('../routes/mutation');
 
 // ====================================================================================
 // validDna

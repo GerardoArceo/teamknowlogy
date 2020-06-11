@@ -36,7 +36,7 @@ Una vez levantado el servidor, podemos acceder al sistema desde nuestro navegado
 
 Para probar el sistema de forma remota por favor accede a la siguiente url: https://gerardoarceo.com/teamknowlogy
 
-El sistema está alejado en un servidor de Amazon en la capa gratuita.
+El sistema está alojado en un servidor de Amazon en la capa gratuita.
 
 
 ### Llamada a las funciones
@@ -129,15 +129,20 @@ Estos 3 subproblemas tienen en común las mismas restricciones para determinar m
 En otras palabras, el problema es identificar si una cadena contiene 4 caracteres iguales contiguos, este problema tiene una complejidad lineal pues basta con recorrer una sola vez la cadena para determinar esto, esto lo podemos llevar a cabo fácilmente siguiendo los siguientes pasos:
 
 1. Inicializar un contador a 1
+
 2. Ir recorriendo caracter por caracter de la cadena, lo hacemos de izquierda a derecha por comodidad
+
 3. Comparamos cada caracter con el siguiente caracter de la cadena, si son iguales aumentamos en 1 el contador, de esta forma podremos llevar la cuenta de la longitud de la subcadena de caracteres iguales
+
 4. En caso de que un caracter no sea igual al siguiente caracter de la cadena, se reinicia el contador a 1 pues significa que se rompió la racha de caracteres iguales (en caso de que existiese dicha racha)
+
 5. Si en algún momento la longitud de la subcadena de caracteres iguales alcanza 4, significa que es una mutación y aumentaremos en 1 nuestro contador de mutaciones
+
 6. Si nuestro contador de mutaciones es mayor a nuestro límite establecido (1), inmediatamente dejamos de buscar más mutaciones y simplemente devolvemos una bandera booleana que indique que la secuencia está mutada.
 
 El algoritmo anterior lo tenemos que ejecutar por cada cadena horizontal, vertical y diagonal que se pueda formar en la secuencia de ADN al tenerla ordenada como una matriz de NxN.
 
-
+Si al evaluar todas las cadenas formadas en la matriz no se encontrarón más mutaciones que el número máximo permitido, se puede decir que la secuencia no está mutada y se retorna el valor booleano correspondiente.
 
 ### Análisis de complejidad
 El algoritmo que implementa este sistema tiene una complejidad O(n<sup>2</sup>), dado que se tienen que recorrer todos los elementos de un arreglo bidimensional, esta cota es la mejor que se puede alcanzar para este problema.
@@ -152,9 +157,9 @@ Para asegurar que todas las funciones del proyecto funcionarán de la forma espe
 
 * validDna: Se comprueba que esta función valide correctamente si una secuencia de ADN es válida a través de una expresión regular.
 
-* stringHasMutation: Se comprueba que esta función determine correctamente si una determinada cadena de caracteres es una secuencia de ADN mutada
+* stringMutations: Se comprueba que esta función determine correctamente el número de mutaciones dentro de una cadena y si se excede el número máximo que se detenga inmediatamente
 
-* getDiagonalStrings: Se comprueba que esta función retorne efectivamente todas las cadenas que se pueden formar en las diagonales de una matriz determinada 
+* diagonalStringMutations: Se comprueba que esta función retorne efectivamente el número de mutaciones que hay en cada una de las cadenas que se pueden formar en las diagonales de una matriz determinada
 
 * hasMutation: Se comprueba que esta función determine correctamente si una secuencia de ADN ha sufrido mutaciones ya sea por las cadenas formadas horizontal, vertical o diagonalmente.
 
