@@ -71,7 +71,7 @@ Se pueden consultar las estadísticas mediante el servicio levantado en la ruta 
 ```
 
 #### Ejemplo de petición GET a la consulta de estadisticas en el servidor remoto
-<a href="https://gerardoarceo.com/teamknowlogy/stats"></a>
+<a href="https://gerardoarceo.com/teamknowlogy/stats">https://gerardoarceo.com/teamknowlogy/stats</a>
 
 
 ## Algoritmo
