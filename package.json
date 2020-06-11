@@ -1,0 +1,22 @@
+{
+    "name": "mutations",
+    "version": "1.0.0",
+    "description": "Pruebas para teamknowlogy",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [
+        "Mutations"
+    ],
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1"
+    },
+    "author": "Gerardo Arceo",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^26.0.1"
+    }
+}
