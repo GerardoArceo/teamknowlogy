@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
     res.json({
         app: 'Prueba para Teamknowlogy',
         author: 'Gerardo Arceo',
+        repository: 'https://github.com/GerardoArceo/teamknowlogy',
         message: 'Sé feliz :)'
     });
 });
